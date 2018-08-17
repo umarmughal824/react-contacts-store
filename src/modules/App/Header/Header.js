@@ -2,6 +2,8 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import './Header.css';
 
+import {NAV_LINKS} from "utils/constants";
+
 const Header = () => (
   <div id="header">
     <div className="container">
@@ -11,10 +13,10 @@ const Header = () => (
       </div>
       <ul className="right-nav">
         <li>
-          <Link to="/account">My Account</Link>
+          <Link to={NAV_LINKS.ACCOUNT.url}>My Account</Link>
         </li>
         <li>
-          <Link to="/login">Logout</Link>
+          <Link to={NAV_LINKS.LOGIN.url}>Logout</Link>
         </li>
       </ul>
     </div>

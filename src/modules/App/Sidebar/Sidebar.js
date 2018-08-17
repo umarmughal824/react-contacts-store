@@ -12,7 +12,6 @@ const Sidebar = () => (
           <NavLink to={NAV_LINKS[aLink].url} activeClassName="active">
             {NAV_LINKS[aLink].displayName}
           </NavLink>
-          &nbsp;
         </li>
       ))}
     </ul>
